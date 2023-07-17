@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    /*colors*/
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    /*fonts*/
+    --Font-size: 16px;
+    --Font-family-heading:'Raleway';
+    --Font-family-body:'Open Sans';
+    --Font-weight-raleway-regular:400;
+    --Font-weight-raleway-bold:700;
+    --Font-weight-open-sans-regular:400;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(./images/bg-curve-desktop.svg);
+}
+header{
+    display: flex;
+    justify-content: end;
+    padding: 50px 50px;
+}
+header>img{
+    margin-right: auto;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 50px;
+    font-family: var(--Font-family-heading);
+    font-weight: var(--Font-weight-raleway-regular);
+}
+
+.container{
+    display: flex;
+    padding: 0 50px;
+    
+}
+.container>img{
+   width: 55%;
+}
+.sub-container>h1{
+font-family: var(--Font-family-heading);
+font-weight: var(--Font-weight-raleway-bold);
+line-height: 50px;
+color: var(--Very-Dark-Blue);
+}
+p{
+    font-family: var(--Font-family-body);
+    font-weight: var(--Font-weight-open-sans-regular);
+    font-size: var(--Font-size);
+    width:530px;
+    color: var(--Very-Dark-Blue);
+}
+#first-sub-container{
+    margin-top: 90px;
+}
+#first-sub-container>p{
+    margin-top:20px ;
+}
+#first-sub-container>form{
+    margin-top:30px ;
+    display: flex;
+}
+#first-input{
+    display: grid;
+}
+#email-input{
+    padding: 10px 10px;
+    width: 280px;
+    color: var(--Very-Dark-Blue);
+    border-radius: 5px;
+}
+#button{
+    height: 40px;
+    background-color: var(--Bright-Blue);
+    padding: 10px 50px;
+    margin-left: 15px;
+    border-radius: 3px;
+    font-family: var(--Font-family-body);
+    font-weight: var(--Font-weight-open-sans-regular);
+    color: var(--Light-Grayish-Blue);
+}
+#button:hover{
+    background-color: hsl(224, 94%, 72%);
+    cursor: pointer;
+}
+
+::placeholder{
+    color: var(--Light-Gray);
+}
+#second-container{
+    margin-top: 250px;
+}
+.description{
+    margin-top: 30px;
+}
+#second-container>img{
+    width: 50%;
+}
+#link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--Moderate-Cyan);
+    border-bottom: 2px solid var(--Moderate-Cyan);
+    width: 32%;
+    padding-bottom: 5px;
+    margin-top: 17px;
+}
+#link:hover{
+    color: hsl(175, 79%, 70%);
+    border-bottom: 2px solid hsl(175, 79%, 70%);
+}
+
+#comment{
+    background-color: white;
+    padding: 25px 30px;
+    margin-top:40px ;
+    border-radius: 5px;
+    width: 400px;
+}
+#comment>p{
+    width: 330px;
+    margin-top:10px ;
+    line-height: 25px;
+}
+#profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+#profile>img{
+    border-radius: 100%;
+   width: 45px;
+}
+#name>h4{
+    font-family: var(--Font-family-heading);
+    font-weight: var(--Font-weight-raleway-bold);
+}
+#name>p{
+    font-size: 13px;
+}
+#third-container{
+    display:flex;
+    background-color: var(--Desaturated-Blue);
+    padding: 70px 50px;
+    gap: 200px;
+}
+#third-container>div>h2{
+   font-family: var(--Font-family-heading);
+   font-weight: var(--Font-weight-raleway-bold);
+   margin-bottom: 20px;
+   color: var(--Light-Grayish-Blue);
+}
+#third-container>div>p{
+    font-family: var(--Font-family-body);
+    font-weight: var(--Font-weight-open-sans-regular);
+    color: var(--Light-Grayish-Blue);
+ }
+#second-email-input{
+    display: grid;
+    padding: 10px 15px;
+    width: 350px;
+    border-radius: 5px;
+}
+#second-button{
+    padding: 10px 40px;
+    background-color: var(--Bright-Blue);
+    width: 205px;
+    border-radius: 3px;
+    font-family: var(--Font-family-body);
+    font-weight: var(--Font-weight-open-sans-regular);
+    color: var(--Light-Grayish-Blue);
+    font-size: 13px;
+}
+#second-button:hover{
+   background-color: hsl(224, 94%, 72%); 
+   cursor: pointer;
+}
+footer{
+    display: flex;
+    background-color: var(--Very-Dark-Blue);
+    padding: 80px 50px;
+}
+.first>img{
+    filter: brightness(0) invert(1);
+}
+.first>p{
+    display: flex;
+    gap: 20px;
+   color: var(--Light-Grayish-Blue);
+   margin-top: 15px;
+}
+.second{
+    margin-top: 120px;
+}
+.second>ul>li{
+    margin-top: -60px;
+}
+.second>ul{
+    display: grid;
+    color: var(--Light-Grayish-Blue);
+}
+.third{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.third>ul>li{
+    margin-top: -20px;
+}
+.third>ul{
+    display: grid;
+    color: var(--Light-Grayish-Blue); 
+}
+.fourth{
+   margin-left: 120px;
+}
+.fourth>img{
+   width: 50px;
+    filter: brightness(0) invert(1);
+    border: 2px solid var(--Light-Grayish-Blue);
+    border-radius: 100%;
+    padding: 15px;
+    margin-top: 90px;
+    margin-left: 20px;
+}
+.firstForm small{
+    font-family: var(--Font-family-body);
+    font-weight: var(--Font-weight-open-sans-regular);
+    visibility: hidden;
+    color:red;
+    
+}
+
+.secondForm small{
+    font-family: var(--Font-family-body);
+    font-weight: var(--Font-weight-open-sans-regular);
+    visibility: hidden;
+    color:var(--Light-Grayish-Blue);
+}
+@media (max-width:550px) {
+    header{
+        padding: 30px;
+    }
+    header>img{
+        width: 80px;
+    }
+    ul{
+        gap: 20px;
+        font-size: 13px;
+    }
+    .container{
+        display: grid;
+        align-items: center;
+        padding:30px; ;
+    }
+    .container>img{
+        width: 300px;
+        position: relative;
+        top: -390px;
+        padding: 30px auto;
+     }
+     .sub-container{
+        position: relative;
+        top: 230px;
+     }
+     .sub-container>h1{
+     width:300px;
+     text-align: center;
+     font-size: 1.4rem;
+    line-height: 35px;
+     
+     }
+     p{
+         text-align: center;
+         width:330px;
+         font-size: 15px;
+         margin-left: -15px;
+         line-height: 25px;
+     }
+     #first-sub-container>form{
+         display: grid;
+     }
+     
+     #email-input{
+         width: 300px;
+     }
+     #button{
+         margin-left: 0px;
+         width: 300px;
+         text-align: center;
+     }
+
+     #second-container>img{
+         width: 300px;
+         position: relative;
+         top: -700px;
+     }
+     
+     #second-sub-container>h1{
+        font-size: 1rem;
+       width: 315px;
+       margin-left: -10px;
+     }
+     .description>p{
+        font-size: 13px;
+        width: 300px;
+        text-align: start;
+        
+     }
+     #link{
+        margin-left: 70px;
+        width: 53%;
+     }
+     
+     #comment{
+         margin-left: -10px;
+         width: 320px;
+     }
+     #comment>p{
+         width: 270px;
+         font-size: 12px;
+         text-align: start;
+         margin-left: 0px;
+     }
+     #name>p{
+         font-size: 12px;
+         margin-left: -100px;
+     }
+     #third-container{
+        margin-top: 100px;
+         display:grid;
+         height: 430px;
+     }
+     #third-container>div>p{
+        font-size: 14px;
+        width: 280px;
+      }
+     #second-email-input{
+         display: grid;
+         width: 250px;
+     }
+     #second-button{
+         width: 250px;
+        text-align: center;
+     }
+     #second-form{
+        margin-top: -150px;
+     }
+     footer{
+         display: grid;
+         padding: 60px 40px;
+     }
+     .first>img{
+         margin-bottom: 20px;
+         margin-left: -10px;
+     }
+     .second{
+         margin-top: 80px;
+         margin-left: -13px;
+     }
+     .second>ul>li{
+         margin-top: 0px;
+     }
+     
+     .third{
+         margin-top: 80px;
+         margin-left: -10px;
+     }
+     .third>ul>li{
+         margin-top: 5px;
+     }
+     .fourth{
+        display: flex;
+        margin-left: 20px;
+     }
+     .fourth>img{
+        width: 50px;
+         filter: brightness(0) invert(1);
+         border: 2px solid var(--Light-Grayish-Blue);
+         border-radius: 100%;
+         padding: 15px;
+         margin-top: 90px;
+         margin-left: 20px;
+     }
+
+}
